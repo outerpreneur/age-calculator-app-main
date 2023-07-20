@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="inputs-section">
+        <div class="inputs day">
+          <p>Day</p>
+          <input placeholder="DD" type="number" max="31" min="1" />
+        </div>
+        <div class="inputs month">
+          <p>Month</p>
+          <input placeholder="MM" type="number" max="12" min="1" />
+        </div>
+        <div class="inputs year">
+          <p>Year</p>
+          <input placeholder="YYYY" type="number" min="1950" />
+        </div>
+      </form>
+      <div class="age">
+        <div class="age-metrics years">
+          <span class="years-output">- -</span>
+          <p class="age-text">years</p>
+        </div>
+        <div class="age-metrics months">
+          <span class="month-output">- -</span>
+          <p class="age-text">months</p>
+        </div>
+        <div class="age-metrics days">
+          <span class="day-output">- -</span>
+          <p class="age-text">days</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./app.js"></script>
