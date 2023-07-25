@@ -56,14 +56,21 @@ body {
 .inputs-section {
   border-bottom: solid 1px var(--Light-grey);
   display: flex;
-  text-transform: uppercase;
   color: var(--Smokey-grey);
   gap: 72px;
 }
 
+.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+form {
+  position: relative;
+}
+
 .inputs {
   margin-bottom: 47.5px;
-  letter-spacing: 5px;
 }
 
 .inputs input {
@@ -77,6 +84,24 @@ body {
 .inputs input::placeholder {
   font-size: 25px;
   font-weight: 900;
+}
+
+.inputs span {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.submit-block button {
+  border: none;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  width: 96px;
+  cursor: pointer;
 }
 
 .age {
@@ -99,4 +124,59 @@ body {
   color: black;
   margin-left: 0.2em;
   font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs-section {
+    gap: 25px;
+    padding-top: 3em;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .inputs input {
+    width: 70px;
+    height: 50px;
+  }
+
+  .inputs input::placeholder {
+    font-size: 20px;
+  }
+
+  .icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -40px;
+    width: 64px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .age {
+    padding-top: 6em;
+  }
+
+  .age-metrics span,
+  .age-metrics p {
+    font-size: 36px;
+  }
 }

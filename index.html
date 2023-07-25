@@ -25,33 +25,48 @@
     />
   </head>
   <body>
-    <div class="container">
-      <form action="/" class="inputs-section">
-        <div class="inputs day">
-          <p>Day</p>
-          <input name="date" placeholder="DD" type="number" max="31" min="1" />
-        </div>
-        <div class="inputs month">
-          <p>Month</p>
-          <input name="date" placeholder="MM" type="number" max="12" min="1" />
-        </div>
-        <div class="inputs year">
-          <p>Year</p>
-          <input name="date" placeholder="YYYY" type="number" min="1950" />
-        </div>
-      </form>
-      <div class="age">
-        <div class="age-metrics years">
-          <span class="years-output">- -</span>
-          <p class="age-text">years</p>
-        </div>
-        <div class="age-metrics months">
-          <span class="month-output">- -</span>
-          <p class="age-text">months</p>
-        </div>
-        <div class="age-metrics days">
-          <span class="day-output">- -</span>
-          <p class="age-text">days</p>
+    <div class="card">
+      <div class="container">
+        <form action="/">
+          <div class="inputs-section">
+            <div class="inputs day">
+              <h2 class="title">Day</h2>
+              <label for="day"></label>
+              <input name="date" id="day" placeholder="DD" type="number" />
+              <span></span>
+            </div>
+            <div class="inputs month">
+              <h2 class="title">Month</h2>
+              <label for="month"></label>
+              <input name="date" id="month" placeholder="MM" type="number" />
+              <span></span>
+            </div>
+            <div class="inputs year">
+              <h2 class="title">Year</h2>
+              <label for="year"></label>
+              <input name="date" id="year" placeholder="YYYY" type="number" />
+              <span></span>
+            </div>
+          </div>
+          <div class="submit-block">
+            <button type="submit" class="submit-btn">
+              <img class="icon" src="./assets/images/icon-muscle.svg" />
+            </button>
+          </div>
+        </form>
+        <div class="age">
+          <div class="age-metrics years">
+            <span class="year-output">- -</span>
+            <p class="age-text">years</p>
+          </div>
+          <div class="age-metrics months">
+            <span class="month-output">- -</span>
+            <p class="age-text">months</p>
+          </div>
+          <div class="age-metrics days">
+            <span class="day-output">- -</span>
+            <p class="age-text">days</p>
+          </div>
         </div>
       </div>
     </div>
